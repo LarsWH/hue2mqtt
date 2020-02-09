@@ -1,0 +1,65 @@
+"C:\Program Files\Java\jdk1.8.0_211\bin\java.exe" -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:54785,suspend=y,server=n -javaagent:C:\Users\lars\.IntelliJIdea2019.3\system\groovyHotSwap\gragent.jar -javaagent:C:\Users\lars\.IntelliJIdea2019.3\system\captureAgent\debugger-agent.jar -Dfile.encoding=windows-1252 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.4\lib\idea_rt.jar" -jar C:\Users\lars\workspaceIntelliJ\hue2mqtt\build\libs\hue2mqtt.jar bridge.id=Philips-hue bridge.ip=192.168.0.39
+Connected to the target VM, address: '127.0.0.1:54785', transport: 'socket'
+feb. 09, 2020 4:31:53 PM com.tellerulam.hue2mqtt.Main main
+INFO: hue2mqtt V0.13 (C) 2015-16 Oliver Wagner <owagner@tellerulam.com>
+feb. 09, 2020 4:31:53 PM com.tellerulam.hue2mqtt.MQTTHandler doConnect
+INFO: Connecting to MQTT broker tcp://localhost:1883 with CLIENTID=hue2mqtt and TOPIC PREFIX=hue/
+feb. 09, 2020 4:31:53 PM com.tellerulam.hue2mqtt.MQTTHandler doConnect
+INFO: Successfully connected to broker, subscribing to hue/set/#
+feb. 09, 2020 4:32:07 PM com.tellerulam.hue2mqtt.HueHandler onAccessPointsFound
+INFO: Found Hue bridge '001788FFFE61A528' @ 192.168.0.39
+feb. 09, 2020 4:32:07 PM com.tellerulam.hue2mqtt.HueHandler onAccessPointsFound
+INFO: Found Hue bridge '001788FFFE22E05F' @ 192.168.0.173
+feb. 09, 2020 4:32:07 PM com.tellerulam.hue2mqtt.HueHandler onAccessPointsFound
+INFO: Found Hue bridge 'ECB5FAFFFE0664A3' @ 192.168.1.100
+feb. 09, 2020 4:32:07 PM com.tellerulam.hue2mqtt.HueHandler onAccessPointsFound
+INFO: Found Hue bridge 'ECB5FAFFFE205C3E' @ 192.168.0.158
+feb. 09, 2020 4:32:07 PM com.tellerulam.hue2mqtt.HueHandler onAccessPointsFound
+INFO: Found Hue bridge '001788FFFE20150D' @ 192.168.1.180
+feb. 09, 2020 4:32:07 PM com.tellerulam.hue2mqtt.HueHandler readUsername
+INFO: Using whitelist username huetomqttuser for Bridge IP 192.168.0.39
+feb. 09, 2020 4:32:07 PM com.tellerulam.hue2mqtt.HueHandler onAccessPointsFound
+INFO: Connecting to Hue bridge 001788FFFE61A528 @ 192.168.0.39 with username huetomqttuser
+feb. 09, 2020 4:32:07 PM com.tellerulam.hue2mqtt.HueHandler onAuthenticationRequired
+SEVERE: IMPORTANT! AUTHENTICATION REQUIRED -- press the button on your Hue Bridge 192.168.0.39 within 30s to authenticate hue2mqtt!
+feb. 09, 2020 4:32:27 PM com.tellerulam.hue2mqtt.HueHandler onBridgeConnected
+INFO: Successfully connected to Hue bridge as wgIC1gTG7JVT8llhcTzIzXRVlI6v0dOlQSNzjzhN
+feb. 09, 2020 4:32:27 PM com.tellerulam.hue2mqtt.HueHandler saveUsername
+INFO: Saved whitelist username wgIC1gTG7JVT8llhcTzIzXRVlI6v0dOlQSNzjzhN for Bridge IP 001788FFFE61A528
+feb. 09, 2020 4:32:27 PM com.tellerulam.hue2mqtt.HueHandler reportGroups
+INFO: Available groups: 1/Kontor 2/Driveway
+feb. 09, 2020 4:32:27 PM com.tellerulam.hue2mqtt.HueHandler reportScenes
+INFO: Available scenes: GEjbwqBYsOy585u/Last on state OZBZZHIrBfnpaJH/Bright jHTG1k6sUDq9i4I/Last on state BtNSRGEK8qkdTpV/Nightlight Be8J123uk8KZTQr/Last on state TPagqs9bkJlnZQF/Dimmed lAIimL3lIuW4AgH/Bright pou14UghFQosEu1/Last on state zKH6nw7-Nu-b69R/Scene recoveryScene  eyMjSzPQamE9aRI/Dimmed Vd-UQ8sYZqYG31X/Nightlight b3VqymEbfTJFrOM/Last on state
+feb. 09, 2020 4:32:27 PM com.tellerulam.hue2mqtt.HueHandler onParsingErrors
+SEVERE: Internal API error [com.philips.lighting.model.PHHueParsingError@5dcd6bb3, com.philips.lighting.model.PHHueParsingError@17785a53, com.philips.lighting.model.PHHueParsingError@6103372c, com.philips.lighting.model.PHHueParsingError@706fac87, com.philips.lighting.model.PHHueParsingError@46c9c1ca, com.philips.lighting.model.PHHueParsingError@1336a182, com.philips.lighting.model.PHHueParsingError@6b744e9f, com.philips.lighting.model.PHHueParsingError@6672cce2, com.philips.lighting.model.PHHueParsingError@6ebd8677, com.philips.lighting.model.PHHueParsingError@48211093]
+feb. 09, 2020 4:32:29 PM com.tellerulam.hue2mqtt.MQTTHandler publishIfChanged
+INFO: Published {"val":254,"hue_state":{"on":true,"bri":254,"alert":"none","effect":"none","colormode":"none","reachable":true}} to hue/status/lights/Hue white lamp 1 (R)
+feb. 09, 2020 4:32:29 PM com.tellerulam.hue2mqtt.MQTTHandler publishIfChanged
+INFO: Published {"val":254,"hue_state":{"on":true,"bri":254,"alert":"none","effect":"none","colormode":"none","reachable":true}} to hue/status/lights/Hue white lamp 2 (R)
+feb. 09, 2020 4:32:29 PM com.tellerulam.hue2mqtt.MQTTHandler publishIfChanged
+INFO: Published {"val":254,"hue_state":{"on":true,"bri":254,"alert":"select","effect":"none","colormode":"none","reachable":true}} to hue/status/lights/Hue white lamp 3 (R)
+feb. 09, 2020 4:32:29 PM com.tellerulam.hue2mqtt.MQTTHandler publishIfChanged
+INFO: Published {"val":0,"hue_state":{"on":false,"bri":127,"alert":"select","effect":"none","colormode":"none","reachable":true}} to hue/status/lights/Hue white lamp 4 (R)
+feb. 09, 2020 4:32:29 PM com.tellerulam.hue2mqtt.MQTTHandler publishIfChanged
+INFO: Published {"val":0,"hue_state":{"on":false,"bri":127,"alert":"select","effect":"none","colormode":"none","reachable":true}} to hue/status/lights/Hue white lamp 5 (R)
+feb. 09, 2020 4:32:37 PM com.tellerulam.hue2mqtt.HueHandler onParsingErrors
+SEVERE: Internal API error [com.philips.lighting.model.PHHueParsingError@710d66ad, com.philips.lighting.model.PHHueParsingError@7381d8c5, com.philips.lighting.model.PHHueParsingError@3364fbae, com.philips.lighting.model.PHHueParsingError@7735b723, com.philips.lighting.model.PHHueParsingError@6d178f66]
+feb. 09, 2020 4:32:47 PM com.tellerulam.hue2mqtt.HueHandler onParsingErrors
+SEVERE: Internal API error [com.philips.lighting.model.PHHueParsingError@102d35f1, com.philips.lighting.model.PHHueParsingError@48005d1, com.philips.lighting.model.PHHueParsingError@5ed626cd, com.philips.lighting.model.PHHueParsingError@f6beece, com.philips.lighting.model.PHHueParsingError@7690d06f]
+feb. 09, 2020 4:32:57 PM com.tellerulam.hue2mqtt.HueHandler onParsingErrors
+SEVERE: Internal API error [com.philips.lighting.model.PHHueParsingError@723afde1, com.philips.lighting.model.PHHueParsingError@1db55d25, com.philips.lighting.model.PHHueParsingError@4df8ddc3, com.philips.lighting.model.PHHueParsingError@3d1b6fbb, com.philips.lighting.model.PHHueParsingError@186b580c]
+feb. 09, 2020 4:33:07 PM com.tellerulam.hue2mqtt.HueHandler onParsingErrors
+SEVERE: Internal API error [com.philips.lighting.model.PHHueParsingError@2f807251, com.philips.lighting.model.PHHueParsingError@241db4a7, com.philips.lighting.model.PHHueParsingError@421d6128, com.philips.lighting.model.PHHueParsingError@f4fa5f, com.philips.lighting.model.PHHueParsingError@2c4a12ea]
+feb. 09, 2020 4:33:17 PM com.tellerulam.hue2mqtt.HueHandler onParsingErrors
+SEVERE: Internal API error [com.philips.lighting.model.PHHueParsingError@653b3348, com.philips.lighting.model.PHHueParsingError@4c860ae6, com.philips.lighting.model.PHHueParsingError@6b07372b, com.philips.lighting.model.PHHueParsingError@1726a5e3, com.philips.lighting.model.PHHueParsingError@2b3b653c]
+feb. 09, 2020 4:33:27 PM com.tellerulam.hue2mqtt.HueHandler onParsingErrors
+SEVERE: Internal API error [com.philips.lighting.model.PHHueParsingError@4be9bee9, com.philips.lighting.model.PHHueParsingError@7aa57e8, com.philips.lighting.model.PHHueParsingError@67f27350, com.philips.lighting.model.PHHueParsingError@351bad6c, com.philips.lighting.model.PHHueParsingError@330343d0]
+feb. 09, 2020 4:33:37 PM com.tellerulam.hue2mqtt.HueHandler onParsingErrors
+SEVERE: Internal API error [com.philips.lighting.model.PHHueParsingError@6643474f, com.philips.lighting.model.PHHueParsingError@12dfd024, com.philips.lighting.model.PHHueParsingError@7a477fde, com.philips.lighting.model.PHHueParsingError@5373ae85, com.philips.lighting.model.PHHueParsingError@2f76e29b]
+feb. 09, 2020 4:33:47 PM com.tellerulam.hue2mqtt.HueHandler onParsingErrors
+SEVERE: Internal API error [com.philips.lighting.model.PHHueParsingError@434449a1, com.philips.lighting.model.PHHueParsingError@2bc7798, com.philips.lighting.model.PHHueParsingError@4c75f6cc, com.philips.lighting.model.PHHueParsingError@548fb7e3, com.philips.lighting.model.PHHueParsingError@35e7f592]
+feb. 09, 2020 4:33:57 PM com.tellerulam.hue2mqtt.HueHandler onParsingErrors
+SEVERE: Internal API error [com.philips.lighting.model.PHHueParsingError@54064401, com.philips.lighting.model.PHHueParsingError@37a60bdb, com.philips.lighting.model.PHHueParsingError@1ebf8263, com.philips.lighting.model.PHHueParsingError@14febf43, com.philips.lighting.model.PHHueParsingError@723ec791]
+Disconnected from the target VM, address: '127.0.0.1:54785', transport: 'socket'
+
+Process finished with exit code 130

@@ -22,8 +22,9 @@ dependencies {
 	)
 }
 
-task listJars << {
-    configurations.compile.each { File file -> println file.name }
+task listJars {
+//    configurations.compile.each { File file -> println file.name }
+	configurations.compile.files.each { println it.name }
 }
 
 jar {
